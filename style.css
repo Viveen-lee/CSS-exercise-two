@@ -5,16 +5,14 @@
 }
 
 body {
-
-
   background-color: blueviolet;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+.container { 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+} 
 
 .card {
   background-color: pink;
@@ -30,7 +28,7 @@ body {
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .Architecture1 {
@@ -85,103 +83,39 @@ body {
   background-color: antiquewhite;
   cursor: pointer;
   transform: scale(1.03);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:30px;
 }
 
 input{
-  display: none;
+    display: none;
 }
 
-.tag{
-  font-size: 1.4rem;
-  margin: 1.5rem 0rem;
-  padding: 5px 1.8rem;
-  border-radius: 50px;
-  background-color: white;
-  display: inline-block;
-  color: black;
-  cursor: pointer;
-  border: 1px solid #8a0cd3;
-}
-
-#Landscapes:checked ~ .images > img:not([class *="Landscapes"]),
-#Portraits:checked ~ .images > img:not([class *="Portraits"]),
-#Architecture:checked ~ .images > img:not([class *="Architecture"]){
-  width: 0px;
-  height: 0px;
-}
-
-#all:checked ~ .all,
-#Landscapes:checked ~ .Landscapes,
-#Portraits:checked ~ .Portraits,
-#Architecture:checked ~ .Architecture{
-  background-color: #333333;
-  color: white;
+.filters label{
+    padding:12px 20px;
+    background:white;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:all .3s ease;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* body{ 
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+#all:checked ~ .filters label[for="all"],
+#Landscapes:checked ~ .filters label[for="Landscapes"],
+#Portraits:checked ~ .filters label[for="Portraits"],
+#Architecture:checked ~ .filters label[for="Architecture"]{
+    background:var(--primary);
+    color:white;
+    transform:translateY(-2px);
 }
-
-input{
-  display: none;
-}
-
-.tag{
-  font-size: 1.4rem;
-  margin: 1.5rem 0rem;
-  padding: 5px 1.8rem;
-  border-radius: 50px;
-  background-color: white;
-  display: inline-block;
-  color: black;
-  cursor: pointer;
-  border: 1px solid #8a0cd3;
-}
-
-img{
-  width: 300px;
-  height: 300px;
-  transition: all .4s ease-in-out;
-}
-
-#Landscapes:checked ~ .images > img:not([class *="Landscapes"]),
-#Portraits:checked ~ .images > img:not([class *="Portraits"]),
-#Architecture:checked ~ .images > img:not([class *="Architecture"]){
-  width: 0px;
-  height: 0px;
-}
-
-#all:checked ~ .all,
-#Landscapes:checked ~ .Landscapes,
-#Portraits:checked ~ .Portraits,
-#Architecture:checked ~ .Architecture{
-  background-color: #333333;
-  color: white;
-}
-
-h1{
-  color: aquamarine;
-}
-
-.images{
-  display: inline-block;
-}
-
-.images:hover{
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px purple;
-}*/
+  
 
