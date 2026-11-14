@@ -1,125 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery page</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2">
+    <input type="radio" name="Photos" id="check3">
+    <input type="radio" name="Photos" id="check4">
 
-<body>
-  <h1>MY IMAGE</h1>
+    <div class="container">
+      <h1>MY GALLERY</h1>
 
-   
-<input type="checkbox" id="all" name="radioBtn" checked>  
-<input type="checkbox" id="Landscapes" name="radioBtn"> 
-<input type="checkbox" id="Portraits" name="radioBtn"> 
- <input type="checkbox" id="Architecture" name="radioBtn"> 
+      
+      <div class="content">
+          <h2>Photo's</h2>
+          <label for="check1">Show all</label>
+          <label for="check2">Landscapes</label>
+          <label for="check3">Portraits</label>
+          <label for="check4">Architecture</label>
+        
+      </div>
 
- <div class="filters">
-    <label for="all">Show all</label> 
-    <label for="Landscapes">Landscapes</label> 
-    <label for="Portraits">Portraits</label> 
-    <label for="Architecture">Architecture</label> 
- </div>
+      <div class="photo-gallery">
+         <div class="card Architecture">
+            <img src="images/Architecture1.jpeg" alt="Palace of Fine Arts">
+            <h3>Palace of Fine Arts in San Francisco</h3>
+            <p>
+            The Palace of Fine Arts is a monumental structure originally built for the 1915 Panama Pacific International Exposition to exhibit works of art.
+          </p>   
+         </div>
+
+         <div class="card Landscapes">
+            <img src="images/Landscape1.jpeg" alt="Drakensberg Mountains">
+            <h3>Drakensberg Mountains in South Africa</h3>
+            <p>
+            The Drakensberg remains one of Africas most dramatic mountain
+            landscapes, combining geological grandeur, cultural heritage, and
+            exceptional biodiversity.
+            </p>   
+         </div>
+
+         <div class="card Portraits">
+            <img src="images/Portrait1.jpg" alt="Vincent van Gogh, self-portrait">
+            <h3>Vincent van Gogh, self-portrait</h3>
+            <p>
+            Vincent van Gogh painted numerous self portraits—over 35 in
+            total—with one of his final and most famous created in 1889 at the Saint Rémy asylum, now held at the Musée dOrsay in Paris.
+            </p>   
+         </div>
+
+         <div class="card Architecture">
+            <img src="images/Architecture2.jpeg" alt="The Parthenon">
+            <h3>The Parthenon</h3>
+            <p>
+            The Parthenon was originally used as a temple dedicated to Athena
+          </p>   
+         </div>
+
+         <div class="card Landscapes">
+            <img src="images/Landscape2.jpeg" alt="Dreamy Sapa">
+            <h3>Dreamy Sapa in Vietnam</h3>
+            <p>
+            Sapa is one of northern Vietnam most famous mountain towns, Known
+            for its misty valleys, rice terraces, and ethnic minority villages, it offers a unique mix of natural beauty and cultural heritage.
+            </p>   
+         </div>
+
+         <div class="card Portraits">
+            <img src="images/Portrait2.jpg" alt="Woman with a Parasol">
+            <h3>Woman with a Parasol, Madame Monet and Her Son</h3>
+            <p>
+            “Woman with a Parasol, Madame Monet and Her Son” is an 1875 oil-on-canvas painting by Claude Monet, depicting his wife Camille Monet and their son Jean during a windy outdoor stroll.
+            </p>   
+         </div>
+
+         <div class="card Architecture">
+            <img src="images/Architecture3.jpeg" alt="St Basil's Cathedral">
+            <h3>St Basil's Cathedral in Moscow</h3>
+            <p>
+            St Basil's Cathedral, an iconic symbol of Russia, is a 16th-century Russian Orthodox church on Red Square, renowned for its colorful onion domes and unique architecture.
+          </p>   
+         </div>
+
+         <div class="card Landscapes">
+            <img src="images/Landscape3.jpeg" alt="Crescent Beach">
+            <h3>Crescent Beach in Ecola State Park</h3>
+            <p>
+            Crescent Beach is a secluded, scenic cove between Ecola Point and
+            Chapman Point, with views of sea stacks, tide pools, and ocean
+            wildlife
+            </p>   
+         </div>
+
+         <div class="card Portraits">
+            <img src="images/Portrait3.jpg" alt="Madame X">
+            <h3>Madame X</h3>
+            <p>
+            Madame X or Portrait of Madame X is an 1884 portrait painting by
+            John Singer Sargent of a young socialite, Virginie Amélie Avegno
+            Gautreau, wife of the French banker Pierre Gautreau.
+            </p>   
+         </div>
+
+         <div class="card Architecture">
+            <img src="images/Architecture4.jpeg" alt="Osaka Castle">
+            <h3>Osaka Castle in Japan</h3>
+            <p>
+            Osaka Castle is a major historic landmark in Osaka, originally built in 1583 by Toyotomi Hideyoshi and now known for its iconic five story main tower, expansive moats, and its role in Japans
+            unification.
+          </p>   
+         </div>
+
+         <div class="card Landscapes">
+            <img src="images/Landscape4.jpeg" alt="rolling green hills of Tuscany">
+            <h3>rolling green hills of Tuscany</h3>
+            <p>
+            Tuscanys rolling hills form a harmonious blend of natural beauty,
+            agricultural tradition, and Renaissance design, with Val dOrcia
+            standing as the regions most iconic landscape.
+            </p>   
+         </div>
+
+         <div class="card Portraits">
+            <img src="images/Portrait4.jpg" alt="The Swing">
+            <h3>The Swing by Jean-Honoré Fragonard</h3>
+            <p>
+            A gentleman of the court reportedly requested the painter represent his mistress being pushed on a swing as he secretly admired her from below.
+            </p>   
+         </div>
 
 
-
-  
-
-  <main class="image-gallery">
-    <section class="container">
-    <div class="card" >
-      <div class="card-image Architecture1"></div>
-      <h2>Palace of Fine Arts in San Francisco</h2>
-      <p>The Palace of Fine Arts is a monumental structure originally built for the 1915 Panama Pacific International Exposition to exhibit works of art.</p>
+      </div>
     </div>
 
 
-    <div class="card" catogory="landscape">
-      <div class="card-image Landscape1"></div>
-      <h2>Drakensberg Mountains in South Africa</h2>
-      <p>The Drakensberg remains one of Africas most dramatic mountain landscapes, combining geological grandeur, cultural heritage, and exceptional biodiversity.</p>
-    </div>
-
-
-    <div class="card" category="Portrait">
-      <div class="card-image Portrait1"></div>
-      <h2>Vincent van Gogh, self-portrait</h2>
-      <p>Vincent van Gogh painted numerous self portraits—over 35 in total—with one of his final and most famous created in 1889 at the Saint Rémy asylum, now held at the Musée dOrsay in Paris.</p>
-    </div>
-
-
-    <div class="card">
-      <div class="card-image Architecture2"></div>
-      <h2>The Parthenon</h2>
-      <p>The Parthenon was originally used as a temple dedicated to Athena</p>
-    </div>
-
-
-    <div class="card">
-      <div class="card-image Landscape2"></div>
-      <h2>Dreamy Sapa in Vietnam</h2>
-      <p>Sapa is one of northern Vietnam most famous mountain towns, Known for its misty valleys, rice terraces, and ethnic minority villages, it offers a unique mix of natural beauty and cultural heritage.</p>
-    </div>
-
-
-    <div class="card">
-      <div class="card-image Portrait2"></div>
-      <h2>Woman with a Parasol, Madame Monet and Her Son</h2>
-      <p>“Woman with a Parasol, Madame Monet and Her Son” is an 1875 oil-on-canvas painting by Claude Monet, depicting his wife Camille Monet and their son Jean during a windy outdoor stroll</p>
-    </div>
-
-
-    <div class="card">
-      <div class="card-image Architecture3"></div>
-      <h2>St Basil's Cathedral in Moscow</h2>
-      <p>St Basil's Cathedral, an iconic symbol of Russia, is a 16th-century Russian Orthodox church on Red Square, renowned for its colorful onion domes and unique architecture.</p>
-    </div>
-
-
-    <div class="card">
-      <div class="card-image Landscape3"></div>
-      <h2>Crescent Beach in Ecola State Park</h2>
-      <p>Crescent Beach is a secluded, scenic cove between Ecola Point and Chapman Point, with views of sea stacks, tide pools, and ocean wildlife </p>
-    </div>
-
-
-    <div class="card">
-      <div class="card-image Portrait3"></div>
-      <h2>Madame X</h2>
-      <p>Madame X or Portrait of Madame X is an 1884 portrait painting by John Singer Sargent of a young socialite, Virginie Amélie Avegno Gautreau, wife of the French banker Pierre Gautreau.</p>
-    </div>
-
-
-    <div class="card">
-      <div class="card-image Architecture4"></div>
-      <h2>Osaka Castle in Japan</h2>
-      <p>Osaka Castle is a major historic landmark in Osaka, originally built in 1583 by Toyotomi Hideyoshi and now known for its iconic five story main tower, expansive moats, and its role in Japans unification.</p>
-    </div>
-
-
-    <div class="card">
-      <div class="card-image Landscape4"></div>
-      <h2>rolling green hills of Tuscany</h2>
-      <p>Tuscanys rolling hills form a harmonious blend of natural beauty, agricultural tradition, and Renaissance design, with Val dOrcia standing as the regions most iconic landscape.</p>
-    </div>
-
-
-    <div class="card">
-      <div class="card-image Portrait4"></div>
-      <h2>The Swing by Jean-Honoré Fragonard</h2>
-      <p>A gentleman of the court reportedly requested the painter represent his mistress being pushed on a swing as he secretly admired her from below. </p>
-    </div>
-
-
-  </section>
-
-  </main>
-
-  
- 
-  
-</body>
-</html>
+    
+  </body>
+</html>    
